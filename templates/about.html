@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<br xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"><br>
+{% for i in tel %}
+<!--<div class="col-sm-3 text-center">-->
+<!--    <div class="product-image-wrapper">-->
+<!--        <div class="single-products">-->
+<!--            <div class="productinfo text-center">-->
+<!--                <img src="{{ i.img.url }}" alt="">-->
+<!--                <h2>{{ i.price }}</h2>-->
+<!--                <h1>{{ i.model }}{{ i.mark }}</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</div>-->
+<!--<div class="container-fluid bg-3 text-center">-->
+<!--    <h3  style="color:black;"> <strong>Телефоны</strong></h3><br>-->
+<!--  <div class="row">-->
+<!--    <div class="col-sm-3">-->
+<!--      <h4>{{ i.model }}{{ i.mark }}</h4>-->
+
+<!--      <img src="{{ i.img.url }}" class="img-responsive" style="width:100%" alt="Image">-->
+<!--         <h2>{{ i.price }}</h2>-->
+<!--&lt;!&ndash;        <video src="{% static 'elek/video/11.MP4' %}"></video>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="col-sm-3 text-center">
+    <div class="thumbnail">
+        <h3 style="color: black;">{{ i.model }}{{ i.mark }}</h3>
+        <h4 style="text-align: center;">{{ i.color }}</h4>
+        <img src="{{ i.img.url }}" width="250" height="300">
+
+        <h2>{{ i.price }}</h2>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

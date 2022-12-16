@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+{% for i in chasy %}
+<!--<div class="col-sm-3">-->
+<!--    <div class="thumbnail">-->
+<!--        <h3 style="color: black;">{{ i.model }}{{ i.mark }}</h3>-->
+<!--        <h4 style="text-align: center;">{{ i.color }}</h4>-->
+<!--        <img src="{{ i.img.url }}" width="250" height="300">-->
+<!--        <p style="color: black;">{{ i.description }}</p>-->
+<!--        <h2>{{ i.price }}</h2>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="col-sm-3 text-center">
+    <div class="thumbnail">
+        <h3 style="color: black;">{{ i.model }}{{ i.mark }}</h3>
+        <h4 style="text-align: center;">{{ i.color }}</h4>
+        <img src="{{ i.img.url }}" width="250" height="300">
+        <h2>{{ i.price }}</h2>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
