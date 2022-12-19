@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Elektro, Acsessuar, Nout
+from .forms import ElektroForm
 
 
 
@@ -28,3 +29,22 @@ def chasy(request):
     }
     return render(request, 'chasy.html', dat)
 
+def create(request):
+    error = ''
+    if request.method == 'POST':
+        form = ElektroForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('about')
+        else:
+            error = 'Форма была неверной'
+
+
+    form = ElektroForm()
+
+    data = {
+        'form': form,
+        'error': error
+    }
+
+    return render(request, 'create.html', data)

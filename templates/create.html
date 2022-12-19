@@ -1,0 +1,19 @@
+{% extends 'site.html' %}
+
+{% block content %}
+     <div class="features">
+          <h1>Форма по добавлению товар</h1>
+          <form method="post">
+              {% csrf_token %}
+              {{ form.model }}<br>
+              {{ form.mark }}<br>
+              {{ form.price }}<br>
+              {{ form.color }}<br>
+              {{ form.description }}<br>
+              {{ form.img }}<br>
+              <span>{{ error }}</span>
+                <button class="btn btn-success" type="submit">Добавить</button>
+          </form>
+
+     </div>
+{% endblock %}

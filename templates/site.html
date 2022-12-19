@@ -5,30 +5,26 @@
 <div class="jumbotron text-center">
     <h1>Company</h1>
     <p>We specialize in electronics</p>
-    <form>
-        <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Subscribe</button>
-            </div>
-        </div>
-    </form>
+    <span><img src="https://maria-sharo.com/wp-content/uploads/2016/12/kol2.png" alt=""></span>
 </div>
+
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
             <h2>НАША КОМПАНИЯ</h2><br>
-            <h4>Под маркой «Электроника» в СССР на заводах, относящихся к ведомству Министерства электронной промышленности (Минэлектронпром),
+            <h4>Под маркой «Электроника» в СССР на заводах, относящихся к ведомству Министерства электронной
+                промышленности (Минэлектронпром),
                 выпускался широкий спектр бытовых электроприборов: телевизоры, компьютерные системы, калькуляторы,
                 электронные часы, магнитофоны, видеомагнитофоны и другие изделия.
                 Некоторые изделия серии были копиями образцов иностранной техники.
                 Экспортные варианты приборов серии выходили под марками «Elektronika»/«Electronika»,
-                «Electrónica» (для испаноговорящих стран) и «Електроника» (для Болгарии), Seconda (для часов), Elorg (Электроноргтехника),
+                «Electrónica» (для испаноговорящих стран) и «Електроника» (для Болгарии), Seconda (для часов), Elorg
+                (Электроноргтехника),
                 Prim (для Чехословакии). Остатки от экспортных партий попадали в продажу и в СССР. </h4><br>
             <br>
-            <button class="btn btn-default btn-lg">Get in Touch</button>
+
         </div>
         <div class="col-sm-4">
             <img src="https://img.freepik.com/premium-vector/logo-gt_634064-100.jpg?w=360" alt="">
@@ -42,8 +38,11 @@
             <span class="glyphicon glyphicon-globe logo slideanim"></span>
         </div>
         <div class="col-sm-8">
-            <h4><strong><h2>ELECTRONICS:</h2></strong> <br><br> Наша  компания находиться в центральной Азии в городе Бишкек. мы
-            реализируемся на электротехнике а так жэ на гаджетах 21 вого века  </h4><br>
+            <h4><strong><h2>ELECTRONICS:</h2></strong> <br><br> Наша компания находиться в центральной Азии в городе
+                Бишкек. мы
+                реализируемся на электротехнике а так жэ на гаджетах 21 вого века
+            </h4>
+            <br>
 
         </div>
     </div>
@@ -51,7 +50,7 @@
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-    <h2>СЕРВИС</h2>
+    <h2 style="background-color: black; color: white;">СЕРВИС</h2>
     <h4>мастер по ремонту электро техники</h4>
     <br>
     <div class="row slideanim">
@@ -70,38 +69,46 @@
     </div>
 
 
-
-
-
-    </div>
+</div>
 
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
     <h2></h2><br>
-    <h1><strong style="color:black;">Наши товары</strong></h1>
+    <h1><strong style="background-color: black; color: white;">Наши товары</strong></h1>
     <br>
     <div class="row text-center slideanim">
         <div class="col-sm-4">
             <div class="thumbnail">
                 <h3 style="color: #000000"><strong>Смартфоны</strong></h3>
-                <img  src="https://object.pscloud.io/cms/cms/Photo/img_0_77_3781_2_1.jpg" alt="Paris" width="250" height="300">
-                <a  href="{% url 'about' %}"><button class="btn btn-success">>ЕЩЁ</button><h2></h2></a>
+                <img src="https://object.pscloud.io/cms/cms/Photo/img_0_77_3781_2_1.jpg" alt="Paris" width="250"
+                     height="300">
+                <a href="{% url 'about' %}">
+                    <button class="btn btn-success">>ЕЩЁ</button>
+                    <h2></h2></a>
             </div>
-            
+
         </div>
         <div class="col-sm-4">
             <div class="thumbnail">
                 <h3 style="color: black;"><strong>Ноутбуки</strong></h3>
-                <img src="https://object.pscloud.io/cms/cms/Photo/img_0_62_2594_0_1.webp" alt="New York" width="250" height="300">
-                <a  href="{% url 'nout' %}"><h2><button class="btn btn-success">>ЕЩЁ</button></h2></a>
+                <img src="https://object.pscloud.io/cms/cms/Photo/img_0_62_2594_0_1.webp" alt="New York" width="250"
+                     height="300">
+                <a href="{% url 'nout' %}">
+                    <h2>
+                        <button class="btn btn-success">>ЕЩЁ</button>
+                    </h2>
+                </a>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="thumbnail">
                 <h3 style="color: black;"><strong>Аксессуары</strong></h3>
-                <img src="https://object.pscloud.io/cms/cms/Photo/img_0_911_597_0_1.jpg" alt="San Francisco" width="250" height="300">
-                <a  href="{% url 'chasy' %}"><button class="btn btn-success">>ЕЩЁ</button><h2></h2></a>
+                <img src="https://object.pscloud.io/cms/cms/Photo/img_0_911_597_0_1.jpg" alt="San Francisco" width="250"
+                     height="300">
+                <a href="{% url 'chasy' %}">
+                    <button class="btn btn-success">>ЕЩЁ</button>
+                    <h2></h2></a>
 
             </div>
         </div>
@@ -110,29 +117,47 @@
     <br>
 
     <h2>с наступаюшим новым годом</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="https://img.freepik.com/free-vector/new-year-2023-rabbit-sign-icon_1308-121371.jpg?w=2000" >
+                <img style="height: 600px;"
+                     src="https://s.gorod60.ru/section/newsInternalIcon/upload/images/news/icon/000/019/852/elkab5a328b7617833.jpg"
+                     alt="Image">
+                <div class="carousel-caption">
+                    <h1>novelty</h1>
+                    <h2>Notebooks</h2>
+                </div>
             </div>
+
             <div class="item">
-                <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                <img style="height: 600px; width: 100%;"
+                     src="https://focus.ua/static/storage/thumbs/1200x630/6/3b/521e5441-2a69c1c3fe82b362236aa102c870b3b6.jpg?v=5572_1"
+                     alt="Image">
+                <div class="carousel-caption">
+                    <h1>novelty</h1>
+                    <h2>Phone</h2>
+                </div>
             </div>
+
+
             <div class="item">
-                <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span>
-                </h4>
+                <img style="height: 600px; width: 100%;"
+                     src="https://data.kaktus.media/image/big/2022-12-12_21-46-02_110094.jpg"
+                     alt="Image">
+                <div class="carousel-caption">
+                    <h1>novelty</h1>
+                    <h2>Clock</h2>
+                </div>
             </div>
         </div>
 
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -142,105 +167,72 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-</div>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-    <div class="text-center">
-        <h2>АКЦИИ</h2>
-        <h4>Choose a payment plan that works for you</h4>
-    </div>
-    <div class="row slideanim">
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Basic</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
-                    <p><strong>15</strong> Ipsum</p>
-                    <p><strong>5</strong> Dolor</p>
-                    <p><strong>2</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$19</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
+        <div class="text-center">
+            <h2 style="background-color: black; color: white;">АКЦИИ</h2>
+            <h4>Choose a payment plan that works for you</h4>
+        </div>
+        <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Сматрфоны</h1>
+                    </div>
+
+                    <div class="panel-footer">
+                        <h1 style="color: black;">20%</h1>
+                        <h3 style="color: black;">Акция</h3>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Pro</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>50</strong> Lorem</p>
-                    <p><strong>25</strong> Ipsum</p>
-                    <p><strong>10</strong> Dolor</p>
-                    <p><strong>5</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$29</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Ноутбуки</h1>
+                    </div>
+
+                    <div class="panel-footer">
+                        <h1 style="color: black;">25%</h1>
+                        <h3 style="color:black;">Акция</h3>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                    <h1>Premium</h1>
-                </div>
-                <div class="panel-body">
-                    <p><strong>100</strong> Lorem</p>
-                    <p><strong>50</strong> Ipsum</p>
-                    <p><strong>25</strong> Dolor</p>
-                    <p><strong>10</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
-                </div>
-                <div class="panel-footer">
-                    <h3>$49</h3>
-                    <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Аксессуары</h1>
+                    </div>
+
+                    <div class="panel-footer">
+                        <h1 style="color: black;">30%</h1>
+                        <h3 style="color: black;">Акция</h3>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey" style=" background-color: #000000;">
-    <h2 class="text-center" style="color:white">Подать Обьявление</h2>
-    <div class="row">
-        <div class="col-sm-5" >
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Bishkek,KG</p>
-            <p><span class="glyphicon glyphicon-phone"></span>+996 509 21 01 11 </p>
-            <p><span class="glyphicon glyphicon-envelope"></span> bekasulaimanov@gmail.com</p>
-        </div>
-        <div class="container">
-        <div class="col-sm-7 slideanim">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Model:" type="text" required><br>
-                    <input class="form-control" id="name1" name="name" placeholder="Color:" type="text" required>
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey" style=" background-color: #000000;">
+        <h2 class="text-center" style="color:white">Подать Обьявление</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Bishkek,KG</p>
+                <p><span class="glyphicon glyphicon-phone"></span>+996 509 21 01 11 </p>
+                <p><span class="glyphicon glyphicon-envelope"></span> bekasulaimanov@gmail.com</p>
+                <a href="{% url 'create' %}">
+                    <h2>
+                        <button class="btn btn-success">>Добавить товар</button>
+                    </h2>
+                </a>
+            </div>
 
-                </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Mark:" type="text" required><br>
-                    <input class="form-control" id="integer" name="name" placeholder="price:" type="text" required>
-                </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Description" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Add</button>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 </div>
